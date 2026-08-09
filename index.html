@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Bicho do Mato - Soluções Mecânicas & Automotivas</title>
+    <!-- Tailwind CSS CDN para estilização moderna e rápida -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para ícones modernos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-slate-950">
+
+    <!-- Header / Navegação -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400">
+                    <i data-lucide="wrench" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block leading-none">BICHO DO MATO</span>
+                    <span class="text-xs text-slate-400 font-medium">Oficina Mecânica</span>
+                </div>
+            </div>
+
+            <!-- Menu Principal -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#servicos" class="text-sm text-slate-300 hover:text-emerald-400 font-medium transition-colors">Serviços</a>
+                <a href="#sobre" class="text-sm text-slate-300 hover:text-emerald-400 font-medium transition-colors">Sobre Nós</a>
+                <a href="#empresa" class="text-sm text-slate-300 hover:text-emerald-400 font-medium transition-colors">Dados Cadastrais</a>
+                <a href="#contato" class="text-sm text-slate-300 hover:text-emerald-400 font-medium transition-colors">Contato</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="tel:3233551385" class="hidden sm:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2.5 rounded-xl transition-all shadow-lg shadow-emerald-500/20">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    (32) 3355-1385
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-24 overflow-hidden border-b border-slate-800/80">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Tradição e Confiança em Tiradentes - MG
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Manutenção automotiva de <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">alta precisão</span>.
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+                    Mais de 27 anos de experiência cuidando do seu veículo com dedicação, peças de qualidade e atendimento transparente.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#servicos" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-emerald-500/20 flex items-center gap-2">
+                        Conheça nossos serviços
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#contato" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold px-6 py-3.5 rounded-xl transition-all">
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços Principais -->
+    <section id="servicos" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Nossos Serviços Especializados</h2>
+                <p class="text-slate-400">Oferecemos diagnóstico preciso e soluções completas para manter seu veículo em perfeito estado.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Serviço 1 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="activity" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Diagnóstico Eletrônico</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Mapeamento completo com equipamentos modernos para identificar falhas no sistema de injeção e eletrônica do veículo.</p>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="disc" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Sistemas de Freios</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Manutenção preventiva e corretiva de discos, pastilhas, fluidos e componentes ABS para a sua total segurança.</p>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="cog" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Revisão de Motor</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Troca de óleo, substituição de correia dentada, regulagens e reparos completos na mecânica pesada e leve.</p>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Suspensão e Amortecedores</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Troca de amortecedores, buchas, pivôs e alinhamento para maior estabilidade e conforto ao dirigir.</p>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Elétrica Automotiva</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Reparo de alternadores, motores de partida, baterias, iluminação e fiação geral do veículo.</p>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="p-6 bg-slate-900 border border-slate-800 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-2">Revisão Preventiva</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Checkup completo para viagens e manutenção periódica para evitar custos com quebras inesperadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dados Institucionais / Registro da Empresa -->
+    <section id="empresa" class="py-20 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span class="text-emerald-400 text-xs font-semibold uppercase tracking-wider">Transparência e Regularidade</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Informações de Registro da Empresa</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Razão Social</div>
+                    <div class="text-white font-medium">Oficina Bicho do Mato LTDA</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Nome Fantasia</div>
+                    <div class="text-white font-medium">Bicho do Mato</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">CNPJ</div>
+                    <div class="text-emerald-400 font-mono font-medium">03.198.826/0001-03</div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Inscrição Estadual MG</div>
+                    <div class="text-white font-mono font-medium">688028000.00-72</div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Data de Abertura</div>
+                    <div class="text-white font-medium">26/05/1999 <span class="text-xs text-slate-400 block">(+27 anos no mercado)</span></div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Situação Cadastral</div>
+                    <div class="text-emerald-400 font-medium inline-flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                        Ativa (desde 03/11/2005)
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Porte & Natureza</div>
+                    <div class="text-white font-medium">Micro Empresa</div>
+                    <div class="text-xs text-slate-400">Sociedade Empresária Limitada</div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="bg-slate-900/40 border border-slate-800 p-5 rounded-xl">
+                    <div class="text-xs text-slate-500 uppercase font-semibold mb-1">Regime Tributário</div>
+                    <div class="text-white font-medium">Opção pelo Simples</div>
+                    <div class="text-xs text-slate-400">Desde 01/01/2019 (Não MEI)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato e Localização -->
+    <section id="contato" class="py-20 bg-slate-900/30 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-emerald-400 text-xs font-semibold uppercase tracking-wider">Atendimento</span>
+                    <h2 class="text-3xl font-bold text-white mt-1 mb-6">Entre em Contato ou Visite-nos</h2>
+                    <p class="text-slate-400 mb-8">Estamos de portas abertas em Tiradentes/MG para oferecer o melhor atendimento para você e seu automóvel.</p>
+
+                    <div class="space-y-6">
+                        <!-- Item Contato 1 -->
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 shrink-0">
+                                <i data-lucide="phone-call" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Telefone</div>
+                                <a href="tel:3233551385" class="text-lg text-white hover:text-emerald-400 font-semibold transition-colors">(32) 3355-1385</a>
+                            </div>
+                        </div>
+
+                        <!-- Item Contato 2 -->
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 shrink-0">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">E-mail</div>
+                                <a href="mailto:matoscon@mgconecta.com.br" class="text-lg text-white hover:text-emerald-400 font-semibold transition-colors">matoscon@mgconecta.com.br</a>
+                            </div>
+                        </div>
+
+                        <!-- Item Contato 3 -->
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl text-emerald-400 shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Endereço & Correspondência</div>
+                                <div class="text-white font-medium mt-1">
+                                    Rua Do Hibisco, 212 - Bairro Alto da Torre<br>
+                                    Tiradentes - MG | CEP: 36325-000
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Visual de Localização / Correspondência -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <i data-lucide="building-2" class="w-6 h-6 text-emerald-400"></i>
+                            <h3 class="text-xl font-bold text-white">Dados de Correspondência</h3>
+                        </div>
+                        <div class="bg-slate-950 p-6 rounded-xl border border-slate-800/80 font-mono text-slate-300 space-y-2 text-sm">
+                            <p class="text-emerald-400 font-semibold">Bicho do Mato Oficina Bicho do Mato LTDA</p>
+                            <p>Rua Do Hibisco 212</p>
+                            <p>Alto da Torre</p>
+                            <p>Tiradentes - MG</p>
+                            <p>36325-000</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-xs text-slate-400">Tipo de Unidade: <strong class="text-white">Matriz</strong></span>
+                        <span class="text-xs text-slate-400">Capital Social: <strong class="text-white">R$ 9.000,00</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Oficina Bicho do Mato LTDA. Todos os direitos reservados.
+            </p>
+            <p class="text-xs text-slate-500 font-mono">
+                CNPJ: 03.198.826/0001-03
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts para carregar os ícones do Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
